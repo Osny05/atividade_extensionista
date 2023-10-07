@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('fontes/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+        }
+
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            text-align: center;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #242832;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #242832;
+            height: 150px;
+        }
+
+        .cabecalhoConteudo {
+            color: white;
+            font-size: 12px;
+            font-family: 'Ubuntu', sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div>
+            <img src="imagens/index/logo2.png" width="150px" height="75px">
+        </div>
+    </header>
+
+    <footer>
+        <div class="cabecalhoConteudo">
+            <div  class="card">
+
+                <div style="padding-top: 20px; padding-left: 60px; padding-right: 60px;">
+                    <p><strong>Endereço:</strong><br><br>Pet Shop X,<br>Rua João Medeiros,<br>120 Centro - Curitiba</p>
+                </div>
+                
+
+                <div style="padding-top: 20px; padding-left: 60px; padding-right: 60px;">
+                    <p><strong>Contate-nos!</strong><br><br>E-mail: petshop@email.com<br>Telefone: 12 3456-7890</p>
+                </div>
+
+                <div style="padding-top: 20px; padding-left: 60px; padding-right: 60px;">
+                   <p><strong>Siga-nos!</strong><br><br>Twitter<br>Facebook<br>Instagram</p>
+                </div>
+
+                <div style="padding-top: 20px; padding-left: 60px; padding-right: 60px;">
+                    <p><strong>Site desenvolvido para fins educacionais</strong><br><br>Aluno: Osny Matheus Braine Lins<br>RU: 4341707<br><br>Aluno: Lucas Felipe Gonçalves Renner<br>RU: 4254978
+                 </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
