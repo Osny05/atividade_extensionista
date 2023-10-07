@@ -20,6 +20,18 @@
             margin: 0;
         }
 
+        .contRod {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .menu {
+            grid-column-start: 5;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
         .container {
             display: grid;
             text-align: center;
@@ -31,18 +43,51 @@
             background-color: #242832;
         }
 
+        ul {
+            list-style-type: none;
+            height: 40px;
+           
+        }
+
+        a, a:link {
+            text-decoration: none;
+            padding: 16px;
+            color: white;
+            background-color: #242832;
+            padding-left: 20px; 
+            padding-right: 20px;
+        }
+
+        li {
+            float: left;
+            font-family: 'Ubuntu', sans-serif;
+            justify-content: center
+        }
+
+        a:hover {
+            background-color: #545c72;
+            color: white;
+            border-bottom: 5px #14171c solid;
+        }
+
         footer {
             grid-column-start: 1;
             grid-column-end: 12;
-            background-color: #242832;
-            height: 150px;
+            background-color: #242832;  
+            border-top: 5px solid black;
+            bottom: 0;
+            left: 0;
+            height: 150px;;
+            position: fixed;
+            width: 100%;
         }
 
-        .cabecalhoConteudo {
+        .rodapeConteudo {
             color: white;
             font-size: 12px;
             font-family: 'Ubuntu', sans-serif;
             margin: 20px;
+            position: absolute;
         }
     </style>
 </head>
@@ -54,26 +99,41 @@
         </div>
     </header>
 
-    <footer>
-        <div class="cabecalhoConteudo">
-            <div  class="card">
+    <br>
 
-                <div style="padding-top: 20px; padding-left: 60px; padding-right: 60px;">
+    <nav class="container menu">
+            <ul>
+                
+                    <li><a href="index.html" style="border-top-left-radius: 40px; border-bottom-left-radius: 40px;">Home</a></li>
+                    <li><a href="produtos.html">Shop</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="dicasPet.html">Dicas Pet</a></li>
+                    <li><a href="clientesSatisfeitos.html">Clientes</a></li>
+                    <li><a href="sobreNos.html" style="border-top-right-radius: 40px; border-bottom-right-radius: 40px;">Sobre Nós</a></li>
+            </ul>            
+    </nav>
+
+    <footer>
+        <div class="rodapeConteudo">
+
+            <div class="card">
+
+                <div class="contRod">
                     <p><strong>Endereço:</strong><br><br>Pet Shop X,<br>Rua João Medeiros,<br>120 Centro - Curitiba</p>
                 </div>
-                
 
-                <div style="padding-top: 20px; padding-left: 60px; padding-right: 60px;">
+                <div class="contRod">
                     <p><strong>Contate-nos!</strong><br><br>E-mail: petshop@email.com<br>Telefone: 12 3456-7890</p>
                 </div>
 
-                <div style="padding-top: 20px; padding-left: 60px; padding-right: 60px;">
-                   <p><strong>Siga-nos!</strong><br><br>Twitter<br>Facebook<br>Instagram</p>
+                <div class="contRod">
+                    <p><strong>Siga-nos!</strong><br><br>Twitter<br>Facebook<br>Instagram</p>
                 </div>
 
-                <div style="padding-top: 20px; padding-left: 60px; padding-right: 60px;">
-                    <p><strong>Site desenvolvido para fins educacionais</strong><br><br>Aluno: Osny Matheus Braine Lins<br>RU: 4341707<br><br>Aluno: Lucas Felipe Gonçalves Renner<br>RU: 4254978
-                 </div>
+                <div class="contRod">
+                    <p><strong>Site desenvolvido para fins educacionais</strong><br><br>Aluno: Osny Matheus Braine
+                        Lins<br>RU: 4341707<br><br>Aluno: Lucas Felipe Gonçalves Renner<br>RU: 4254978
+                </div>
             </div>
         </div>
 
