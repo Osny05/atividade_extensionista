@@ -11,6 +11,14 @@
             src: url('fontes/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
         }
 
+        body {
+            margin: 0;
+        }
+
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
         .card {
             display: flex;
             flex-flow: row wrap;
@@ -28,41 +36,52 @@
         .menu {
             grid-column-start: 5;
             grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
             justify-content: center;
             gap: 20px;
         }
 
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
         .container {
             display: grid;
-            text-align: center;
         }
 
         header {
             grid-column-start: 1;
             grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
             background-color: #242832;
         }
 
-        ul {
+        .ulDoMenu {
             list-style-type: none;
             height: 40px;
-           
         }
 
-        a, a:link {
+        a,
+        a:link {
             text-decoration: none;
             padding: 16px;
             color: white;
             background-color: #242832;
-            padding-left: 20px; 
+            padding-left: 20px;
             padding-right: 20px;
         }
 
-        li {
+        .liDoMenu {
             float: left;
-            font-family: 'Ubuntu', sans-serif;
             justify-content: center
         }
+
 
         a:hover {
             background-color: #545c72;
@@ -70,14 +89,28 @@
             border-bottom: 5px #14171c solid;
         }
 
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .wrapper {
+            grid-column-start: 1;
+            grid-column-end: 8;
+            margin: 30px;
+        }
+
         footer {
             grid-column-start: 1;
             grid-column-end: 12;
-            background-color: #242832;  
+            grid-row-start: 1;
+            grid-row-end: 1;
+            background-color: #242832;
             border-top: 5px solid black;
             bottom: 0;
             left: 0;
-            height: 150px;;
+            height: 150px;
+            ;
             position: fixed;
             width: 100%;
         }
@@ -89,30 +122,114 @@
             margin: 20px;
             position: absolute;
         }
+
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <header class="container">
+    <header class="container" style="text-align: center;">
         <div>
             <img src="imagens/index/logo2.png" width="150px" height="75px">
         </div>
     </header>
-
     <br>
-
     <nav class="container menu">
-            <ul>
-                
-                    <li><a href="index.html" style="border-top-left-radius: 40px; border-bottom-left-radius: 40px;">Home</a></li>
-                    <li><a href="produtos.html">Shop</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="dicasPet.html">Dicas Pet</a></li>
-                    <li><a href="clientesSatisfeitos.html">Clientes</a></li>
-                    <li><a href="sobreNos.html" style="border-top-right-radius: 40px; border-bottom-right-radius: 40px;">Sobre Nós</a></li>
-            </ul>            
+        <ul class="ulDoMenu">
+
+            <li class="liDoMenu"><a href="index.html"
+                    style="border-top-left-radius: 40px; border-bottom-left-radius: 40px;">Home</a></li>
+            <li class="liDoMenu"><a href="produtos.html">Shop</a></li>
+            <li class="liDoMenu"><a href="servicos.html">Serviços</a></li>
+            <li class="liDoMenu"><a href="dicasPet.html">Dicas Pet</a></li>
+            <li class="liDoMenu"><a href="clientesSatisfeitos.html">Clientes</a></li>
+            <li class="liDoMenu"><a href="sobreNos.html"
+                    style="border-top-right-radius: 40px; border-bottom-right-radius: 40px;">Sobre Nós</a></li>
+        </ul>
     </nav>
 
+    <div style="text-align: center;">
+        <hr>
+        <h1>Seja Bem-Vindo(a)!</h1>
+        <hr>
+    </div>
+
+
+
+    <div class="container wrapper">
+
+        <aside class="imagem_leo">
+            <div class="infos" style="margin-bottom: 600px;">
+                <aside class="wrapper">
+                    <h2>Animais que Atendemos</h2>
+                    <ul>
+                        <li>
+                            <h3>Cachorros</h3>
+                        </li>
+                        <li>
+                            <h3>Gatos</h3>
+                        </li>
+                        <li>
+                            <h3>Pássaros</h3>
+                        </li>
+                        <li>
+                            <h3>Hamsters</h3>
+                        </li>
+                    </ul>
+                    <h2>Horário de Atendimento</h2>
+                    <ul>
+                        <li>
+                            <h3>Segunda - Sexta:<br> 07:00 a.m até 18:00 p.m</h3>
+                        </li>
+                        <li>
+                            <h3>Sábado:<br> 09:00 a.m até 16:00 p.m</h3>
+                        </li>
+                        <li>
+                            <h3>Domingo:<br> 10:00 a.m até 15:00 p.m</h3>
+                        </li>
+                        <li>
+                            <h3>Feriados:<br> 12:00 a.m até 15:00 p.m</h3>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </aside>
+
+        <section class="principal">
+
+            <div style="background-color: #242832; color: white; border-radius: 50px;">
+                <h1 style="text-align: center; margin-top: 30px;"><strong>Promoção - 30% off <br> para itens de cães</strong></h1>
+                <img src="imagens/index/cao1.png" width="60%"
+                    style="display: block; margin: 0px auto; border-radius: 50px;">
+                <br><br>
+            </div>
+
+
+            <div class="card" style="margin-top: 70px; margin-bottom: 10px;">
+                <div style="background-color: #242832; color: white; height: 200px; border-top-left-radius: 50px;border-bottom-left-radius: 50px;">
+                    <h2 style="padding-left: 5px; padding-right: 5px; padding-top: 50px;">Anunciamos nossa feira de doação de gatos!</h2>
+                    <h2 style="padding-left: 5px; padding-right: 5px; padding-bottom: 50px;">Definiremos uma data em breve. Aguarde.</h2>
+                </div>
+
+                <img src="imagens/index/gato1.png" style="height: 180px; border: 10px solid #242832;">
+            </div>
+        </section>
+    </div>
     <footer>
         <div class="rodapeConteudo">
 
