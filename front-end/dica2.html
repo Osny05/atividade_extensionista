@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('fontes/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .contRod {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .menu {
+            grid-column-start: 5;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            background-color: #242832;
+        }
+
+        .ulDoMenu {
+            list-style-type: none;
+            height: 40px;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 16px;
+            color: white;
+            background-color: #242832;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .liDoMenu {
+            float: left;
+            justify-content: center
+        }
+
+
+        a:hover {
+            background-color: #545c72;
+            color: white;
+            border-bottom: 5px #14171c solid;
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .wrapper {
+            grid-column-start: 1;
+            grid-column-end: 8;
+            margin: 30px;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            color: white;
+            text-align: center;
+            background-color: #242832;
+            border-top: 5px solid black;
+            bottom: 0;
+            height: 150px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .rodapeConteudo {
+            color: white;
+            font-size: 12px;
+            margin: 20px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container" style="text-align: center;">
+        <div>
+            <img src="imagens/index/logo2.png" width="150px" height="75px">
+        </div>
+    </header>
+    <br>
+    <nav class="container menu">
+        <ul class="ulDoMenu">
+
+            <li class="liDoMenu"><a href="index.html"
+                    style="border-top-left-radius: 40px; border-bottom-left-radius: 40px;">Home</a></li>
+            <li class="liDoMenu"><a href="produtos.html">Shop</a></li>
+            <li class="liDoMenu"><a href="servicos.html">Serviços</a></li>
+            <li class="liDoMenu"><a href="dicasPet.html">Dicas Pet</a></li>
+            <li class="liDoMenu"><a href="clientesSatisfeitos.html">Clientes</a></li>
+            <li class="liDoMenu"><a href="sobreNos.html"
+                    style="border-top-right-radius: 40px; border-bottom-right-radius: 40px;">Sobre Nós</a></li>
+        </ul>
+    </nav>
+
+    <div style="text-align: center;">
+        <hr>
+        <h1>Quando Levar o Pet ao Veterinário?</h1>
+        <hr>
+
+        <img style="border-radius: 200px;" src="imagens/dicasPet/medicoVeterinario.jpg">
+    </div>
+
+    <div class="container wrapper">
+        <section>
+
+            <div style="margin-left: 30px; margin-right: 30px; margin-bottom: 50px;">
+                <p style="text-align: justify; font-size: 20px;">Levar seu pet ao veterinário é uma parte essencial da responsabilidade de ser um tutor de animais de estimação. Mas quando exatamente você deve agendar uma consulta? Existem várias situações e indicadores que podem ajudá-lo a determinar o momento certo para uma visita ao veterinário. Primeiramente, é importante manter um cronograma regular de check-ups anuais, independentemente de o seu pet parecer saudável. Isso permite que o veterinário identifique problemas de saúde antes que eles se agravem.</p>
+            </div>
+
+
+            <div style="margin-left: 30px; margin-right: 30px; margin-bottom: 50px;">
+                <p style="text-align: justify; font-size: 20px;">Além dos check-ups anuais, fique atento a sinais de alerta. Se seu pet demonstrar mudanças significativas em seu comportamento, apetite, peso, ou atividade, isso pode indicar um problema de saúde. Vômitos persistentes, diarreia, dificuldade para respirar, feridas que não cicatrizam e qualquer sintoma incomum devem ser avaliados por um profissional de saúde animal. Também é importante manter o calendário de vacinação em dia e discutir qualquer dúvida ou preocupação com o veterinário.</p>
+            </div>
+
+            <div style="margin-left: 30px; margin-right: 30px; margin-bottom: 50px;">
+                <p style="text-align: justify; font-size: 20px;">Além disso, considere a idade do seu animal de estimação. Filhotes e animais mais velhos geralmente requerem atenção veterinária mais frequente devido a suas necessidades específicas. Animais mais velhos podem desenvolver problemas de saúde relacionados à idade, como artrite, enquanto filhotes precisam de acompanhamento constante para garantir que estejam crescendo de forma saudável. Em resumo, não espere até que seu pet esteja visivelmente doente para agendar uma consulta; a prevenção e a detecção precoce de problemas de saúde são cruciais para manter seu amigo peludo feliz e saudável.</p>
+
+                    
+            </div>           
+            
+        </section>
+    </div>
+    <footer class="container">
+        <div class="rodapeConteudo">
+
+            <div class="card">
+
+                <div class="contRod">
+                    <p><strong>Endereço:</strong><br><br>Pet Shop X,<br>Rua João Medeiros,<br>120 Centro - Curitiba</p>
+                </div>
+
+                <div class="contRod">
+                    <p><strong>Contate-nos!</strong><br><br>E-mail: petshop@email.com<br>Telefone: 12 3456-7890</p>
+                </div>
+
+                <div class="contRod">
+                    <p><strong>Siga-nos!</strong><br><br>Twitter<br>Facebook<br>Instagram</p>
+                </div>
+
+                <div class="contRod">
+                    <p><strong>Site desenvolvido para fins educacionais</strong><br><br>Aluno: Osny Matheus Braine
+                        Lins<br>RU: 4341707<br><br>Aluno: Lucas Felipe Gonçalves Renner<br>RU: 4254978
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

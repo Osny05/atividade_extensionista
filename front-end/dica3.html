@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('fontes/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .contRod {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .menu {
+            grid-column-start: 5;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            background-color: #242832;
+        }
+
+        .ulDoMenu {
+            list-style-type: none;
+            height: 40px;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 16px;
+            color: white;
+            background-color: #242832;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .liDoMenu {
+            float: left;
+            justify-content: center
+        }
+
+
+        a:hover {
+            background-color: #545c72;
+            color: white;
+            border-bottom: 5px #14171c solid;
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .wrapper {
+            grid-column-start: 1;
+            grid-column-end: 8;
+            margin: 30px;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            color: white;
+            text-align: center;
+            background-color: #242832;
+            border-top: 5px solid black;
+            bottom: 0;
+            height: 150px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .rodapeConteudo {
+            color: white;
+            font-size: 12px;
+            margin: 20px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container" style="text-align: center;">
+        <div>
+            <img src="imagens/index/logo2.png" width="150px" height="75px">
+        </div>
+    </header>
+    <br>
+    <nav class="container menu">
+        <ul class="ulDoMenu">
+
+            <li class="liDoMenu"><a href="index.html"
+                    style="border-top-left-radius: 40px; border-bottom-left-radius: 40px;">Home</a></li>
+            <li class="liDoMenu"><a href="produtos.html">Shop</a></li>
+            <li class="liDoMenu"><a href="servicos.html">Serviços</a></li>
+            <li class="liDoMenu"><a href="dicasPet.html">Dicas Pet</a></li>
+            <li class="liDoMenu"><a href="clientesSatisfeitos.html">Clientes</a></li>
+            <li class="liDoMenu"><a href="sobreNos.html"
+                    style="border-top-right-radius: 40px; border-bottom-right-radius: 40px;">Sobre Nós</a></li>
+        </ul>
+    </nav>
+
+    <div style="text-align: center;">
+        <hr>
+        <h1>Como Fazer o Gato Parar de Trazer Bichos para Dentro de Casa</h1>
+        <hr>
+
+        <img style="border-radius: 200px;" src="imagens/dicasPet/bichoDentroCasa.jpg">
+    </div>
+
+    <div class="container wrapper">
+        <section>
+
+            <div style="margin-left: 30px; margin-right: 30px; margin-bottom: 50px;">
+                <p style="text-align: justify; font-size: 20px;">Ensinar um gato a parar de trazer bichos para dentro de casa pode ser um desafio, mas é possível adotar algumas estratégias para lidar com esse comportamento natural dos felinos. Aqui estão sete dicas para ajudar a controlar esse hábito:</p>
+            </div>
+
+
+            <div style="margin-left: 30px; margin-right: 30px; margin-bottom: 50px;">
+                <p style="text-align: justify; font-size: 20px;">
+                <ul>
+                    <li style="font-size: 20px;">Castração: A castração ou esterilização pode reduzir o instinto de caça em gatos. Isso não elimina completamente o comportamento, mas pode diminuir a frequência com que eles caçam e tragam presas para casa.</li>
+                    <br>
+                    <li style="font-size: 20px;">Brincadeiras: Gatos são predadores naturais e precisam de estimulação mental e física. Brincar com seu gato usando brinquedos que simulam presas, como varinhas com penas ou bolinhas, pode ajudar a liberar sua energia de caça.</li>
+                    <br>
+                    <li style="font-size: 20px;">Atenção e carinho: Dê ao seu gato atenção e carinho para que ele não sinta a necessidade de chamar a atenção por meio da caça. Dedique tempo para brincar e interagir com ele diariamente.</li>
+                    <br>
+                    <li style="font-size: 20px;">Atenção e carinho: Dê ao seu gato atenção e carinho para que ele não sinta a necessidade de chamar a atenção por meio da caça. Dedique tempo para brincar e interagir com ele diariamente.</li>
+                    <br>
+                    <li style="font-size: 20px;">Coleira com guizo: Colocar uma coleira com um guizo no seu gato pode alertar as presas da presença dele, permitindo que elas fujam antes de serem caçadas.</li>
+                    <br>
+                    <li style="font-size: 20px;">Treinamento: Utilize comandos simples, como "largue" ou "solte", quando seu gato trouxer uma presa para dentro. Ofereça uma recompensa quando ele obedecer. Com paciência e consistência, ele pode começar a associar esses comandos ao comportamento de trazer presas.</li>
+                    <br>
+                    <li style="font-size: 20px;">Recompensas: Reforce o comportamento desejado. Quando seu gato não trouxer presas para casa, elogie-o e ofereça uma recompensa, como petiscos ou brincadeiras extras.</li>
+                    <br>
+                </ul>
+                </p>
+            </div>
+
+            <div style="margin-left: 30px; margin-right: 30px; margin-bottom: 50px;">
+                <p style="text-align: justify; font-size: 20px;">Lembre-se de que cada gato é único, e pode levar tempo para modificar esse comportamento. Se o problema persistir ou se você estiver preocupado com a saúde do seu gato devido a presas que ele possa ter ingerido, consulte um veterinário ou um especialista em comportamento felino para obter orientação personalizada.</p>
+            </div>
+            
+        </section>
+    </div>
+    <footer class="container">
+        <div class="rodapeConteudo">
+
+            <div class="card">
+
+                <div class="contRod">
+                    <p><strong>Endereço:</strong><br><br>Pet Shop X,<br>Rua João Medeiros,<br>120 Centro - Curitiba</p>
+                </div>
+
+                <div class="contRod">
+                    <p><strong>Contate-nos!</strong><br><br>E-mail: petshop@email.com<br>Telefone: 12 3456-7890</p>
+                </div>
+
+                <div class="contRod">
+                    <p><strong>Siga-nos!</strong><br><br>Twitter<br>Facebook<br>Instagram</p>
+                </div>
+
+                <div class="contRod">
+                    <p><strong>Site desenvolvido para fins educacionais</strong><br><br>Aluno: Osny Matheus Braine
+                        Lins<br>RU: 4341707<br><br>Aluno: Lucas Felipe Gonçalves Renner<br>RU: 4254978
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
