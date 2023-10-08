@@ -82,16 +82,15 @@
             justify-content: center
         }
 
-
         a:hover {
             background-color: #545c72;
             color: white;
             border-bottom: 5px #14171c solid;
         }
 
-        .imagem_leo {
-            grid-column-start: 1;
-            grid-column-end: 3;
+        .img {
+            margin-left: 85px;
+            margin-bottom: 30px;
         }
 
         .wrapper {
@@ -138,85 +137,67 @@
 <body>
     <header class="container" style="text-align: center;">
         <div>
-            <img src="arquivos/imagens/index/logo2.png" width="150px" height="75px">
+            <img src="imagens/index/logo2.png" width="150px" height="75px">
         </div>
     </header>
+
     <br>
+
     <nav class="container menu">
         <ul class="ulDoMenu">
 
-            <li class="liDoMenu"><a href="arquivos/home.html"
+            <li class="liDoMenu"><a href="home.html"
                     style="border-top-left-radius: 40px; border-bottom-left-radius: 40px;">Home</a></li>
-            <li class="liDoMenu"><a href="arquivos/produtos.html">Shop</a></li>
-            <li class="liDoMenu"><a href="arquivos/servicos.html">Serviços</a></li>
-            <li class="liDoMenu"><a href="arquivos/dicasPet.html">Dicas Pet</a></li>
-            <li class="liDoMenu"><a href="arquivos/clientesSatisfeitos.html">Clientes</a></li>
-            <li class="liDoMenu"><a href="arquivos/sobreNos.html"
+            <li class="liDoMenu"><a href="produtos.html">Shop</a></li>
+            <li class="liDoMenu"><a href="servicos.html">Serviços</a></li>
+            <li class="liDoMenu"><a href="dicasPet.html">Dicas Pet</a></li>
+            <li class="liDoMenu"><a href="clientesSatisfeitos.html">Clientes</a></li>
+            <li class="liDoMenu"><a href="sobreNos.html"
                     style="border-top-right-radius: 40px; border-bottom-right-radius: 40px;">Sobre Nós</a></li>
         </ul>
     </nav>
 
-    <div style="text-align: center;">
-        <hr>
-        <h1>Seja Bem-Vindo(a)!</h1>
-        <hr>
-    </div>
+    <h1 style="text-align: center;">Produtos para <strong>Peixes</strong></h1>
 
-    <div class="container wrapper">
-        <aside class="imagem_leo">
-            <div class="infos" style="margin-bottom: 600px;">
-                <aside class="wrapper">
-                    <h2>Animais que Atendemos</h2>
-                    <ul>
-                        <li>
-                            <h3>Cachorros</h3>
-                        </li>
-                        <li>
-                            <h3>Gatos</h3>
-                        </li>
-                        <li>
-                            <h3>Pássaros</h3>
-                        </li>
-                        <li>
-                            <h3>Hamsters</h3>
-                        </li>
-                    </ul>
-                    <h2>Horário de Atendimento</h2>
-                    <ul>
-                        <li>
-                            <h3>Segunda - Sexta:<br> 07:00 a.m até 18:00 p.m</h3>
-                        </li>
-                        <li>
-                            <h3>Sábado:<br> 09:00 a.m até 16:00 p.m</h3>
-                        </li>
-                        <li>
-                            <h3>Domingo:<br> 10:00 a.m até 15:00 p.m</h3>
-                        </li>
-                        <li>
-                            <h3>Feriados:<br> 12:00 a.m até 15:00 p.m</h3>
-                        </li>
-                    </ul>
-                </aside>
-            </div>
-        </aside>
+    <section class="principal">
 
-        <section class="principal">
+        <div class="card">
 
-            <div style="background-color: #242832; color: white; border-radius: 50px; margin-bottom: 200px;">
-                <h1 style="text-align: center; margin-top: 30px;"><strong>Promoção - 30% off <br> para itens de cães</strong></h1>
-                <img src="arquivos/imagens/index/cao1.png" width="60%"
-                    style="display: block; margin: 0px auto; border-radius: 50px;">
-                    <br><br><br><br>
-            </div>
-            <div class="card" style="margin-top: 70px;">
-                <div style="background-color: #242832; color: white; height: 200px; border-top-left-radius: 50px;border-bottom-left-radius: 50px;">
-                    <h2 style="padding-left: 5px; padding-right: 5px; padding-top: 50px;">Anunciamos nossa feira de doação de gatos!</h2>
-                    <h2 style="padding-left: 5px; padding-right: 5px; padding-bottom: 50px;">Definiremos uma data em breve. Aguarde.</h2>
+            <div style="margin-left: 150px; margin-bottom: 150px;">
+                <img src="imagens/produtosAcessorios/peixes/decoracao.png" style="height: 250px; width: 250px;">
+                <div class="">
+                    <h3 style="text-align: center;">Decoração</h2>
+                    <h3 style="text-align: center;"><strong>R$ 7,50</strong></h3>
                 </div>
-                <img src="arquivos/imagens/index/gato1.png" style="height: 180px; border: 10px solid #242832;">
             </div>
-        </section>
-    </div>
+
+            <div style="margin-left: 150px; margin-bottom: 150px;">
+                <img src="imagens/produtosAcessorios/peixes/bomba.jpg" style="height: 250px; width: 250px;">
+                <div class="">
+                    <h3 style="text-align: center;">Bomba de Ar</h2>
+                    <h3 style="text-align: center;"><strong>R$ 26,60
+                    </strong></h3>
+                </div>
+            </div>
+
+            <div style="margin-left: 150px; margin-bottom: 150px;">
+                <img src="imagens/produtosAcessorios/peixes/filtro.png" style="height: 250px; width: 250px;">
+                <div class="">
+                    <h3 style="text-align: center;">Filtro de Aquário</h2>
+                    <h3 style="text-align: center;"><strong>R$ 22,00</strong></h3>
+                </div>
+            </div>        
+
+            <div style="margin-left: 150px; margin-bottom: 150px;">
+                <img src="imagens/produtosAcessorios/peixes/caverna.jpg" style="height: 250px; width: 250px;">
+                <div class="">
+                    <h3 style="text-align: center;">Caverna para Aquário</h2>
+                    <h3 style="text-align: center;"><strong>R$ 59,99</strong></h3>
+                </div>
+            </div>                
+        </div>
+    </section>
+
     <footer class="container">
         <div class="rodapeConteudo">
 
@@ -240,7 +221,7 @@
                 </div>
             </div>
         </div>
-
     </footer>
 </body>
+
 </html>
